@@ -13,18 +13,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
-
-        </activity>
-
+        <activity android:name=".CareMenuFragment"></activity>
+        <activity android:name=".MainActivity"></activity>
 
         <meta-data
             android:name="com.naver.maps.map.CLIENT_ID"
             android:value="0l8htuamay" />
 
-        <activity android:name=".CrimeMap">
-        </activity>
-        <activity android:name=".DropdownAdapter"/>
+        <activity android:name=".DropdownAdapter" />
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,13 +28,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SignUpActivity"/>
-        <activity android:name=".BoardContentsActivity"/>
-        <activity android:name=".BoardContentsWriteActivity"/>
-        <activity android:name=".myGroup"/>
-        <activity android:name="PreventionInfoContentsActivity"/>
-        <activity android:name=".ETFSlideActivity"/>
-
+        <activity android:name=".CrimeMap_Robbery" />
+        <activity android:name=".CrimeMap_Murder" />
+        <activity android:name=".CrimeMap_Rape" />
+        <activity android:name=".CrimeMap_Larceny" />
+        <activity android:name=".CrimeMap_Violence" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".BoardContentsActivity" />
+        <activity android:name=".BoardContentsWriteActivity" />
+        <activity android:name=".myGroup" />
+        <activity android:name=".PreventionInfoContentsActivity" />
+        <activity android:name=".ETFSlideActivity" />
     </application>
 
 </manifest>

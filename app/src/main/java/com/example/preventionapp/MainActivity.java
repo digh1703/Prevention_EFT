@@ -126,8 +126,8 @@ public class MainActivity extends AppCompatActivity {
                         drawer.closeDrawer(Gravity.LEFT);
                         return true;
                     case R.id.nav_1:
-                        Intent intent = new Intent(getApplicationContext(), CrimeMap.class);
-                        startActivity(intent);
+                        fragmentTransaction.replace(R.id.activity_main_fragment, new CrimeMapMenu());
+                        fragmentTransaction.commit();
                         return true;
                     case R.id.nav_2:
                         fragmentTransaction.replace(R.id.activity_main_fragment, new CallFragment());

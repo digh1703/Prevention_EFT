@@ -63,8 +63,9 @@ public class MainFragment extends Fragment {
         getView().findViewById(R.id.fragment_main_mapButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity().getApplicationContext(), CrimeMap.class);
-                startActivity(intent);
+                FragmentTransaction fragmentTransaction = getParentFragmentManager().beginTransaction();
+                fragmentTransaction.replace(R.id.activity_main_fragment, new CrimeMapMenu());
+                fragmentTransaction.commit();
             }
         });
         getView().findViewById(R.id.fragment_main_callButton).setOnClickListener(new View.OnClickListener() {
